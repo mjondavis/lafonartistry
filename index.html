@@ -1,1 +1,27 @@
-<h1>Hello World!</h1>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Lafon Artistry</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <main>
+            <div id="bg"></div>
+            <div id="inner">
+                <img src="assets/lafon.svg" alt="Lafon Artistry Logo">
+            </div>
+        </main>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            $(document).ready(function() {
+                setTimeout(function () {
+                    $('#bg').fadeIn(3000);
+                }, 2000);
+                $('#inner img').fadeIn(2000);
+            });
+        </script>
+    </body>
+</html>
